@@ -90,7 +90,7 @@ def changechar(s):
 
 # 获取标注位置
 def getAddr(s):
-    g = s.split(" | ")[0]
+    g = s.split(" | ")[0].replace("您在位置", "").replace("的标注", "")
     return g
 
 
